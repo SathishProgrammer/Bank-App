@@ -1,3 +1,4 @@
+package com.bankapp;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -22,6 +23,7 @@ public class Bank {
 			  throw new CustomerNotFoundException("Account not found");
 		  }
 		  customers.remove(account);
+		  System.out.println("Account closed successfully");
 	  }
 	  catch(CustomerNotFoundException e) {
 		  System.out.println(e.getMessage());
